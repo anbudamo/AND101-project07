@@ -17,29 +17,34 @@
         android:id="@+id/title_textView"
         android:layout_width="185dp"
         android:layout_height="40dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="13dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/michroma"
+        android:textColor="#5d00ff"
+        android:textSize="10dp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/nasa_image"/>
+        app:layout_constraintLeft_toRightOf="@+id/nasa_image"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/date_textView"
         android:layout_width="185dp"
         android:layout_height="20dp"
-        android:layout_marginLeft="13dp"
+        android:layout_marginLeft="8dp"
+        android:fontFamily="sans-serif"
         android:textSize="12dp"
         app:layout_constraintLeft_toRightOf="@+id/nasa_image"
-        app:layout_constraintTop_toBottomOf="@+id/title_textView"/>
+        app:layout_constraintTop_toBottomOf="@+id/title_textView" />
 
     <TextView
         android:id="@+id/explanation_textView"
-        android:layout_width="185dp"
-        android:layout_height="47dp"
+        android:layout_width="183dp"
+        android:layout_height="59dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="13dp"
-        android:textSize="10dp"
+        android:fontFamily="@font/magra"
+        android:textAppearance="@style/TextAppearance.Quote"
         app:layout_constraintLeft_toRightOf="@+id/nasa_image"
-        app:layout_constraintTop_toBottomOf="@+id/date_textView"/>
+        app:layout_constraintTop_toBottomOf="@+id/date_textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

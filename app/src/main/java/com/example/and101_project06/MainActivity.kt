@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
     private fun fetchApodData() {
         val client = AsyncHttpClient()
 
-        client["https://api.nasa.gov/planetary/apod?api_key=NzmWTsbM4lJMr4gGc3Bsv93wfx5pZD0LaSIcKdOi&count=10", object : JsonHttpResponseHandler() {
+        client["https://api.nasa.gov/planetary/apod?api_key=sKMMGMpU3bhTCqdQSA7gvDXJoDF3D8KQUVCCJPN7&count=10", object : JsonHttpResponseHandler() {
             override fun onSuccess(statusCode: Int, headers: Headers, json: JsonHttpResponseHandler.JSON) {
                 Log.d("NASA", "response successful")
                 val nasaImageArray = json.jsonArray
